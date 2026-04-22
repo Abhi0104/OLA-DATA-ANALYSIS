@@ -1,0 +1,211 @@
+This project analyzes OLA ride-booking data for July 2024, consisting of over 100,000 records, to uncover trends in bookings, revenue, cancellations, and customer behavior.
+
+Using SQL, Python, and Power BI, the project transforms raw ride data into interactive dashboards and actionable insights.
+
+📅 Dataset Description (Add this in GitHub README)
+
+Dataset Period:
+
+📆 1st July 2024 – 31st July 2024 (1 Month Data)
+
+Total Records:
+
+📊 100,000+ ride bookings
+
+📁 Dataset Features (Columns Explanation)
+
+The dataset includes:
+
+Booking Details: Date, Time, Booking_ID, Status
+Customer Info: Customer_ID
+Ride Info: Vehicle_Type, Pickup & Drop Location
+Time Metrics:
+CTAT (Customer Time Allocation)
+VTAT (Vehicle Time Allocation)
+Financials: Booking_Value, Payment_Method
+Distance: Ride_Distance
+Ratings: Customer_Ratings, Driver_Ratings
+Cancellations: Reasons (Customer & Driver)
+
+📊 Monthly Business Insight (July 2024)
+
+👉 This analysis is based on one month of operational data, which helps in:
+Understanding short-term demand trends
+Identifying weekly ride patterns
+Detecting cancellation behavior within a month
+
+
+DASHBOARD
+
+📊 Slide 1: Key KPIs & Meaning (OLA July Analysis)
+
+🔢 1. Total Bookings (103K):
+Total number of ride requests made by customers in July.
+
+✅ 2. Successful Bookings (64K):
+Number of rides that were successfully completed.
+
+💰 3. Total Revenue (57M):
+Total money generated from completed rides.
+
+⏱️ 4. Avg CTAT (84.87 mins)
+CTAT = Customer Time Allocation Time:
+Average time taken from booking to customer pickup.
+
+
+🚗 5. Avg VTAT (170.88 mins)
+VTAT = Vehicle Time Allocation Time:
+Time taken to assign a vehicle after booking.
+
+
+CHARTS:
+📅 Ride Distribution by Day
+
+👉 What it shows:
+Number of bookings for each day in July.
+
+👉 How to read:
+X-axis → Days (1–31)
+Y-axis → Sum Of Ride Distribution 
+
+👉 Insight:
+Demand is consistent across all days
+No major spikes or drops
+
+
+🚗Most Preferable Vehicle Type
+👉 What it shows:
+Total bookings for each vehicle type.
+
+👉 How to read:
+Y-axis → Vehicle types
+X-axis → Count of rides
+
+👉 Insight:
+All vehicle types have almost equal demand (~14K)
+No single dominant category
+
+⭐ Avg Customer Rating by Vehicle
+👉 What it shows:
+Average customer rating for each vehicle type.
+
+👉 How to read:
+X-axis → Vehicle type
+Y-axis → Rating
+
+👉 Insight:
+Ratings are around 3.99–4.00 (stable)
+Slight drop in Bike & eBike
+
+💰 Avg Booking Value (Donut Chart)
+
+👉 What it shows:
+Average booking value for each vehicle type.
+
+👉 How to read:
+Each slice → vehicle type
+Value → average ride price
+
+👉 Insight:
+Values are very similar (~₹540–₹557)
+
+💳 Count of Payment Method
+
+👉 What it shows:
+Distribution of payment methods.
+
+👉 How to read:
+Each slice → payment type
+Size → usage share
+
+👉 Insight:
+Cash & UPI dominate
+Cards (Credit/Debit) are less used
+---------------------------------------------------------------------------------
+NOTE: 
+“Explain your dashboard charts”
+
+Say:
+“I analyzed daily booking trends, vehicle preferences, customer ratings, revenue distribution, and payment methods. I found that demand is stable, vehicle usage is balanced, ratings are consistent, and most users prefer cash and UPI payments.”
+
+---------------------------------------------------------------------------------
+
+
+
+OVERALL
+
+📈 🔹 Chart 1: Booking Status Breakdown (Pie Chart)
+
+Insight:
+Majority rides are Successful (~62%) ✔
+Significant portion:
+Cancelled by Driver
+Cancelled by Customer
+Small % = Driver Not Found
+
+🎤Say this:
+
+“Most bookings are successfully completed, but there is a noticeable cancellation rate which impacts overall efficiency.”
+
+📉 🔹 Chart 2: Ride Volume Over Time (Line Chart)
+
+💡 Insight:
+Ride demand is mostly stable
+Slight fluctuations across days
+Drop at end → possible data gap or low demand
+
+🎤 Say this:
+
+“Ride demand remains consistent throughout the month with minor fluctuations, indicating stable user activity.”
+
+
+🚖 📊 Slide 3: Vehicle Type Analysis
+
+📊 🔹 Table Used in Dashboard
+
+Your table includes:(Matrix)
+
+Vehicle_Type
+Success Booking Value
+Total Booking Value
+Avg Distance Travelled
+Total Distance Travelled
+
+
+✅ 1. Most Preferred Vehicle
+
+👉 Prime Sedan / eBike / Bike 
+Highest bookings (~9K+)
+
+🎤 Say:
+“Prime Sedan and Bike categories are the most preferred by customers.”
+
+✅ 2. Revenue Contribution
+
+👉 Top revenue generators:
+Prime Sedan
+eBike
+Prime Plus
+
+🎤 Say:
+“Premium vehicles contribute more to overall revenue.”
+
+✅ 3. Distance Analysis
+
+👉 Avg distance:
+
+Around 15 KM for most vehicles
+Auto has very low distance (~6 KM)
+
+🎤 Say:
+“Auto rides are mostly short-distance, while premium vehicles are used for longer trips.”
+
+✅ 4. Total Distance Travelled
+
+👉 Highest:
+
+Prime Sedan
+eBike
+
+🎤 Say:
+“These vehicles contribute maximum to total travel demand.”
