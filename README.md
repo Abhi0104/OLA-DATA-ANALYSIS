@@ -176,22 +176,15 @@ This one-month analysis helps in:
 * Identifying weekly ride patterns
 * Detecting cancellation behavior
 
----
-
-## 📸 Dashboard Preview
-
-(Add your screenshots here)
-
-Example:
-![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## 🛠 Tools & Technologies
-
-* SQL
-* Python
 * Power BI
+* SQL
+* Excel
+* Python
+
 
 ---
 
